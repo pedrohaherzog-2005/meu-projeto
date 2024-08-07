@@ -1,10 +1,17 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
 
 function App() {
+
+  const nome = "Maria"
+
   return (
     <div className="App">
-      <h1>Olá React!</h1>
-      <p>Meu primeiro projeto de app em React.</p>
+      <HelloWorld />
+      <SayMyName nome = "Pedro Henrique" />
+      <SayMyName nome = "João" />
+      <SayMyName nome = {nome} />
     </div>
   )
 }
